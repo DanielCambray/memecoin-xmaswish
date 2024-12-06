@@ -1,0 +1,48 @@
+---
+import TelegramIcon from "../icons/TelegramIcon.astro";
+import XIcon from "../icons/XIcon.astro";
+import DexScreenerIcon from "../icons/DexScreenerIcon.astro";
+const telegramURL = "https://github.com/"
+const xURL = "https://www.youtube.com/"
+const dexScreenerURL = "https://www.linkedin.com/"
+const exchangeURL = "https://raydium.io/swap/?inputMint=sol&outputMint=Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump"
+---
+
+<div class="social-links my-4">
+  <div
+    class="flex gap-y-3 gap-3 justify-center w-full mr-6"
+  >
+    <a
+      href={telegramURL}
+      class="el flex items-center justify-center h-12 w-12"
+    >
+      <TelegramIcon/>
+    </a>
+    <a
+      href={xURL}
+      class="el flex items-center justify-center h-12 w-12 bg-black rounded-full"
+    >
+      <XIcon/>
+    </a>
+
+    <a
+        href={dexScreenerURL}
+        class="el flex items-center justify-center h-12 w-12 bg-white rounded-full"
+    >
+      <DexScreenerIcon/>
+    </a>
+    <a
+      href={exchangeURL}
+      class="flex items-center justify-center bg-tertiary rounded px-2">
+      Buy $XMASWISH
+    </a>
+  </div>
+</div>
+<style>
+  .el {
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    line-height: 2em;
+  }
+</style>
