@@ -22,21 +22,21 @@ import {coinName, URLs, isGraduated} from "../data/data.json"
       <XIcon/>
     </a>
 
-    {isGraduated && (
+    { isGraduated && (
         <a
             href={URLs.dexScreenerURL}
             class="el flex items-center justify-center h-12 w-12 bg-white rounded-full transition-transform duration-200 transform hover:scale-110"
         >
           <DexScreenerIcon/>
         </a>
-        <a
-            href={isGraduated ? URLs.raydiumURL: URLs.pumpURL}
-            target="_blank"
-            class="flex items-center justify-center bg-tertiary rounded px-2 border-2 border-tertiary hover:border-black">
-          Buy ${coinName}
-        </a>
     )}
 
+    <a
+      href={isGraduated ? URLs.raydiumURL: URLs.pumpURL}
+      target="_blank"
+      class="flex items-center justify-center bg-tertiary rounded px-2 border-2 border-tertiary hover:border-black">
+      Buy ${coinName}
+    </a>
   </div>
 </div>
 <style>
