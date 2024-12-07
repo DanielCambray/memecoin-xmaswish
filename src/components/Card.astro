@@ -14,7 +14,7 @@ const { title, body, href, cta } = Astro.props;
   <div class="p-5">
     {
       href && (
-        <a href={href}>
+        <a href={href} target="_blank">
           <h5
             transition:name="project-title"
             class="industry mb-2 text-2xl font-bold tracking-tight text-white"
@@ -39,7 +39,7 @@ const { title, body, href, cta } = Astro.props;
     {
       href && (
         <a
-          href={href}
+          href={href} target="_blank"
           class="text-center w-full mt-6 inline-flex items-center font-medium text-sm px-5 py-2.5 industry text-white bg-primary"
         >
           <span class="w-full transition-transform duration-100 transform hover:scale-125">{cta}</span>

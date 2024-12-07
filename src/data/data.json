@@ -1,19 +1,22 @@
 {
   "site": {
     "siteURL": "https://xmashwish.meme",
-    "siteDescription": "",
+    "siteDescription": "Santa Claus is not gonna to make it this Xmas. Please could you stop with all those crazy wishlists ?! If not, will he survived another Xmas ?",
     "siteTitle": "Santa Claus Is Not Gonna To Make It",
     "siteImageURL": "/XMASWISH.jpg"
   },
   "URLs": {
     "xURL": "https://x.com/chillguycto",
     "telegramURL": "https://t.me/chillguyctoverify",
-    "dexScreenerURL": "https://dexscreener.com/solana/93tjgwff5ac5thymi8c4wejvvqq4tumemuyw1leyz7bu",
-    "exchangeURL" : "https://raydium.io/swap/?inputMint=sol&outputMint=Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
-    "jupURL": "https://jup.ag/swap/SOL-Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
-    "phantomURL": "https://phantom.app/"
+    "dexScreenerURL": "https://dexscreener.com/solana/haybmiyurpvzqgsuewap1fhm257peujgngvxtdkqjvgx",
+    "raydiumURL" : "https://raydium.io/swap/?inputMint=sol&outputMint=DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump",
+    "jupURL": "https://jup.ag/swap/SOL-DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump",
+    "phantomURL": "https://phantom.app/",
+    "pumpURL": "https://pump.fun/coin/DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump"
   },
-  "contractAddress": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+  "contractAddress": "DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump",
+  "poolAddress": "haybmiyurpvzqgsuewap1fhm257peujgngvxtdkqjvgx",
   "coinName": "XMASWISH",
-  "tagLine": "Santa Claus Might Need an Upgrade!"
+  "tagLine": "Santa Claus Might Need an Upgrade!",
+  "isGraduated" : false
 }

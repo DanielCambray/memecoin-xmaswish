@@ -1,0 +1,37 @@
+---
+import Card from "./Card.astro";
+import {coinName, URLs} from "../data/data.json"
+
+---
+<h2 id=how-to-buy" class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-gray-800 mb-2">
+    How to Buy
+</h2>
+<div class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
+    <div class="">
+        <Card
+                href=`${URLs.phantomURL}`
+                title="Create Wallet"
+                body="Download phantom or your wallet of choice from the app store or google play for free. Desktop users: download the google chrome extension by going to phantom."
+                cta="GET PHANTOM"
+        >
+        </Card>
+    </div>
+    <div class="">
+        <Card
+                href=`${URLs.phantomURL}`
+                title="Get Some SOL"
+                body=`Have SOL in your wallet to switch to $${coinName}. If you don't have any SOL, you can buy directly on phantom, transfer from another wallet, or buy on another exchange and send it to your wallet.`
+                cta="BUY SOL"
+        >
+        </Card>
+    </div>
+    <div class="">
+        <Card
+                href=`${URLs.pumpURL}`
+                title="Go to Pump.fun"
+                body=`Connect to pump.fun. connect your wallet in chrome, paste the $${coinName} token address, select trade, and confirm. when phantom prompts you for a wallet signature, sign.`
+                cta="BUY NOW"
+        >
+        </Card>
+    </div>
+</div>

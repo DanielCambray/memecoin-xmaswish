@@ -2,8 +2,7 @@
 import TelegramIcon from "../icons/TelegramIcon.astro";
 import XIcon from "../icons/XIcon.astro";
 import DexScreenerIcon from "../icons/DexScreenerIcon.astro";
-import {coinName, URLs} from "../data/data.json"
-
+import {coinName, URLs, isGraduated} from "../data/data.json"
 ---
 
 <div class="social-links my-4">
@@ -30,7 +29,8 @@ import {coinName, URLs} from "../data/data.json"
       <DexScreenerIcon/>
     </a>
     <a
-      href={URLs.exchangeURL}
+      href={isGraduated ? URLs.raydiumURL: URLs.pumpURL}
+      target="_blank"
       class="flex items-center justify-center bg-tertiary rounded px-2 border-2 border-tertiary hover:border-black">
       Buy ${coinName}
     </a>
