@@ -1,10 +1,10 @@
 ---
 import Card from "./Card.astro";
-import {coinName, URLs} from "../data/data.json"
+import {coinName, contractAddress, URLs} from "../data/data.json"
 
 ---
 <h2 id=how-to-buy" class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-gray-800 mb-2">
-    How to Buy
+    How to Buy on Pump.fun
 </h2>
 <div class="mx-auto grid grid-cols-1 lg:grid-cols-3 gap-4">
     <div class="">
@@ -27,7 +27,7 @@ import {coinName, URLs} from "../data/data.json"
     </div>
     <div class="">
         <Card
-                href=`${URLs.pumpURL}`
+                href=`${URLs.pumpBaseURL}${contractAddress}`
                 title="Go to Pump.fun"
                 body=`Connect to pump.fun. connect your wallet in chrome, paste the $${coinName} token address, select trade, and confirm. when phantom prompts you for a wallet signature, sign.`
                 cta="BUY NOW"

@@ -8,14 +8,14 @@
   "URLs": {
     "xURL": "https://x.com/CRAZY_XMAS_WISH",
     "telegramURL": "https://t.me/xmas_wish",
-    "dexScreenerURL": "https://dexscreener.com/solana/haybmiyurpvzqgsuewap1fhm257peujgngvxtdkqjvgx",
-    "raydiumURL" : "https://raydium.io/swap/?inputMint=sol&outputMint=DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump",
-    "jupURL": "https://jup.ag/swap/SOL-DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump",
+    "dexScreenerBaseURL": "https://dexscreener.com/solana/",
+    "raydiumBaseURL" : "https://raydium.io/swap/?inputMint=sol&outputMint=",
+    "jupBaseURL": "https://jup.ag/swap/SOL-",
     "phantomURL": "https://phantom.app/",
-    "pumpURL": "https://pump.fun/coin/DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump"
+    "pumpBaseURL": "https://pump.fun/coin/"
   },
-  "contractAddress": "DRTqtird1USXUR42uBEPsJJzJ89Ta52QSmrVLhMdpump",
-  "poolAddress": "haybmiyurpvzqgsuewap1fhm257peujgngvxtdkqjvgx",
+  "contractAddress": "",
+  "poolAddress": "",
   "coinName": "XMASWISH",
   "tagLine": "Santa Claus Might Need an Upgrade!",
   "isGraduated" : false

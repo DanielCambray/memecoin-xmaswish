@@ -1,30 +1,54 @@
+---
+import { Picture } from 'astro:assets';
+import WISH_001 from '../assets/WISH_001.jpg'
+import WISH_002 from '../assets/WISH_002.jpg'
+import WISH_003 from '../assets/WISH_003.jpg'
+import  {URLs} from "../data/data.json"
+
+---
+
 <h2
-        class="my-4 text-lg text-gray-800 dark:text-gray-800 font-light lg:text-xl"
+        class="pb-2 text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-gray-800 mb-2 text-justify"
 >
-    Santa Claus is not gonna make it this Xmas. Please could you stop with all those crazy wishlists ?! If not, will he survived another Xmas ?
+    Santa Claus is not gonna make it. Please could you stop with all those crazy wishlists?! If not, will he survived another Xmas?
 </h2>
-<ol>
-    <li>A real-life unicorn : Because who wouldn't want a magical, sparkly friend?</li>
-    <li>A time machine : To travel back and forth in time whenever you want.</li>
-    <li>A pet dragon : That breathes fire and can fly you around the world.</li>
-    <li>A bottomless bag of candy : That never runs out, no matter how much you eat.</li>
-    <li>A magic wand : That can turn anything into gold with a wave.</li>
-    <li>A teleportation device : To instantly travel anywhere in the universe.</li>
-    <li>A talking parrot : That can speak every language fluently.</li>
-    <li>A robot butler : That can cook, clean, and do all your chores.</li>
-    <li>A lifetime supply of pizza : Delivered fresh and hot every day.</li>
-    <li>A magic carpet : That can fly you to any destination in the world.</li>
-    <li>A superpower : Like invisibility, super strength, or the ability to fly.</li>
-    <li>A magical mirror : That shows you what you'll look like in the future.</li>
-    <li>A genie in a bottle : That grants you three wishes a day.</li>
-    <li>A talking dog : That can have full conversations with you.</li>
-    <li>A magic paintbrush : That brings your paintings to life.</li>
-    <li>A spaceship : To explore the galaxy and visit other planets.</li>
-    <li>A magic hat : That makes you invisible when you wear it.</li>
-    <li>A never-ending book : That writes new stories every time you open it.</li>
-    <li>A magic lamp : That grants you unlimited wishes.</li>
-    <li>A talking cat : That gives you wise advice and tells funny jokes.</li>
-</ol>
+
+<div class="grid grid-cols-3 md:grid-cols-3 gap-4">
+    <div>
+        <Picture
+                src={WISH_002} formats={['avif', 'webp']}
+                alt="A time travel machine."
+                widths={[240, 540, 720, WISH_001.width]}
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_001.width}px`}
+        />
+        <div class="italic">A time travel machine to withdraw what I just said to my wife.</div>
+    </div>
+
+    <div>
+        <Picture
+                src={WISH_003} formats={['avif', 'webp']}
+                alt="A pet dragon."
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_001.width}px`}
+        />
+        <div class="italic">A pet dragon that breathes fire on the guys that pissed my off.</div>
+    </div>
+
+    <div>
+        <Picture
+                src={WISH_001} formats={['avif', 'webp']}
+                alt="A unicorn."
+                widths={[240, 540, 720, WISH_001.width]}
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_001.width}px`}
+        />
+        <div class="italic">A unicorn to take me far away when I'm in troubles.</div>
+    </div>
+</div>
+
+<h2
+        class="pb-2 text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-gray-800 mb-2 text-justify"
+>
+    Post your own crazy wishes or react on <a class="hover:text-primary" href={URLs.xURL} target="_blank">X</a> or <a class="hover:text-primary"  href={URLs.telegramURL} target="_blank">telegram</a>.
+</h2>
 
 <style>
 
