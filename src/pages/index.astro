@@ -1,51 +1,48 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Heading from "../components/Heading.astro";
-import CTA from "../components/CTA.astro";
 import HowToBuy from "../components/HowToBuy.astro";
 import { Picture } from 'astro:assets';
 import XMASWISH_IMAGE from '../assets/XMASWISH.jpg';
-
+import CoinDescription1 from "../components/CoinDescription1.astro";
+import ContractAddress from "../components/ContractAddress.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<Layout title="Web Developer Portfolio">
+<Layout>
   <div id="contents">
-    <main class="container">
 
-      <div class="mb-16">
+    <div class="bg-primary">
+      <div class="container">
         <Heading />
+      </div>
+    </div>
 
+    <div class="bg-secondary">
+      <div class="container">
         <Picture src={XMASWISH_IMAGE} formats={['avif', 'webp']} alt="Santa Claus cannot believe its own eyes" />
-
-        <h2
-          class="mt-4 text-lg text-zinc-500 dark:text-zinc-400 font-light lg:text-xl"
-        >
-            Santa Claus is not gonna make it this Xmas. With all those crazy wishlists, will he survived another Xmas ?
-        </h2>
       </div>
+    </div>
 
-      <div class="mb-16">
-        <h2
-          class="text-3xl mt-6 font-medium lg:text-4xl tracking-tight text-primary dark:text-white"
-        >
-          Content Creation
-        </h2>
-        <p class="mt-4 text-lg text-zinc-500 dark:text-zinc-400">
-          I make <a
-            href="https://www.youtube.com/@shadowstack"
-            target="_blank"
-            class="underline text-gray-300">YouTube</a
-          > videos on web development, including projects I'm currently working on.
-        </p>
+    <div class="bg-tertiary">
+      <div class="container">
+        <CoinDescription1/>
       </div>
-
-      <HowToBuy/>
-
-      <div class="my-8 bg-black">
-        <CTA />
-      </div>
-    </main>
+    </div>
   </div>
+
+  <div class="bg-primary">
+    <div class="container">
+      <ContractAddress/>
+    </div>
+  </div>
+
+  <div class="bg-tertiary pb-12">
+    <div class="container">
+      <HowToBuy/>
+    </div>
+  </div>
+
 </Layout>
 
 <style is:global>
@@ -99,8 +96,8 @@ import XMASWISH_IMAGE from '../assets/XMASWISH.jpg';
     margin-bottom: 2rem;
     border: 1px solid rgba(var(--accent-light), 25%);
     background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
+        rgba(var(--accent-dark), 66%),
+        rgba(var(--accent-dark), 33%)
     );
     padding: 1.5rem;
     border-radius: 8px;

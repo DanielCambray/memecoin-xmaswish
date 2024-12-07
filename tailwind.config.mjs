@@ -10,23 +10,9 @@ export default {
         
       },
       colors: {
-        "secondary": "#1a1a1a",
-        primary: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
-          950: "#1a1a1a",
-        },
-        tertiary: "#799ea7",
-        quaternary: "#b91c1c"
-
+        primary: "#b91c1c",
+        secondary: "#799ea7",
+        tertiary: "#fef3c7",
       },
     },
     fontFamily: {

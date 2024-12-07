@@ -1,8 +1,19 @@
 {
-  "socialLinks": {
-    "x": "https://x.com/chillguycto",
-    "telegram": "https://t.me/chillguyctoverify",
-    "dexscreener": "https://dexscreener.com/solana/93tjgwff5ac5thymi8c4wejvvqq4tumemuyw1leyz7bu"
+  "site": {
+    "siteURL": "https://xmashwish.meme",
+    "siteDescription": "",
+    "siteTitle": "Santa Claus Is Not Gonna To Make It",
+    "siteImageURL": "/XMASWISH.jpg"
   },
-  "contractAddress": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump"
+  "URLs": {
+    "xURL": "https://x.com/chillguycto",
+    "telegramURL": "https://t.me/chillguyctoverify",
+    "dexScreenerURL": "https://dexscreener.com/solana/93tjgwff5ac5thymi8c4wejvvqq4tumemuyw1leyz7bu",
+    "exchangeURL" : "https://raydium.io/swap/?inputMint=sol&outputMint=Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+    "jupURL": "https://jup.ag/swap/SOL-Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+    "phantomURL": "https://phantom.app/"
+  },
+  "contractAddress": "Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump",
+  "coinName": "XMASWISH",
+  "tagLine": "Santa Claus Might Need an Upgrade!"
 }

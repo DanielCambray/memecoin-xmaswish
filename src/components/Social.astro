@@ -2,10 +2,8 @@
 import TelegramIcon from "../icons/TelegramIcon.astro";
 import XIcon from "../icons/XIcon.astro";
 import DexScreenerIcon from "../icons/DexScreenerIcon.astro";
-const telegramURL = "https://github.com/"
-const xURL = "https://www.youtube.com/"
-const dexScreenerURL = "https://www.linkedin.com/"
-const exchangeURL = "https://raydium.io/swap/?inputMint=sol&outputMint=Df6yfrKC8kZE3KNkrHERKzAetSxbrWeniQfyJY4Jpump"
+import {coinName, URLs} from "../data/data.json"
+
 ---
 
 <div class="social-links my-4">
@@ -13,28 +11,28 @@ const exchangeURL = "https://raydium.io/swap/?inputMint=sol&outputMint=Df6yfrKC8
     class="flex gap-y-3 gap-3 justify-center w-full mr-6"
   >
     <a
-      href={telegramURL}
-      class="el flex items-center justify-center h-12 w-12"
+      href={URLs.telegramURL}
+      class="el flex items-center justify-center h-12 w-12 bg-black rounded-full transition-transform duration-200 transform hover:scale-110"
     >
       <TelegramIcon/>
     </a>
     <a
-      href={xURL}
-      class="el flex items-center justify-center h-12 w-12 bg-black rounded-full"
+      href={URLs.xURL}
+      class="el flex items-center justify-center h-12 w-12 bg-black rounded-full transition-transform duration-200 transform hover:scale-110"
     >
       <XIcon/>
     </a>
 
     <a
-        href={dexScreenerURL}
-        class="el flex items-center justify-center h-12 w-12 bg-white rounded-full"
+        href={URLs.dexScreenerURL}
+        class="el flex items-center justify-center h-12 w-12 bg-white rounded-full transition-transform duration-200 transform hover:scale-110"
     >
       <DexScreenerIcon/>
     </a>
     <a
-      href={exchangeURL}
-      class="flex items-center justify-center bg-tertiary rounded px-2">
-      Buy $XMASWISH
+      href={URLs.exchangeURL}
+      class="flex items-center justify-center bg-tertiary rounded px-2 border-2 border-tertiary hover:border-black">
+      Buy ${coinName}
     </a>
   </div>
 </div>
