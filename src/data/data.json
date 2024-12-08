@@ -4,7 +4,11 @@
     "siteDescription": "Santa Claus is not gonna to make it this Xmas. Please could you stop with all those crazy wishlists ?! If not, will he survived another Xmas ?",
     "siteTitle": "Santa Claus Is Not Gonna To Make It",
     "siteImageURL": "/XMASWISH.jpg",
-    "googleSiteVerification": "Ge79DopMFmhqVIxdCc_ZrfGtQFZ1JsS1n0BJ3ME7Gfk"
+    "googleSiteVerification": "Ge79DopMFmhqVIxdCc_ZrfGtQFZ1JsS1n0BJ3ME7Gfk",
+    "googleAnalytics": {
+      "id": "G-0ZLLJ8FEE2",
+      "partytown": false
+    }
   },
   "URLs": {
     "xURL": "https://x.com/CRAZY_XMAS_WISH",

@@ -1,5 +1,6 @@
 ---
 import {site} from '../data/data.json'
+import GoogleAnalytics from "../components/GoogleAnalytics.astro";
 ---
 
 <!doctype html>
@@ -75,6 +76,7 @@ import {site} from '../data/data.json'
     </style>
   </head>
   <body class="bg-amber-100">
+    <GoogleAnalytics id={String(site.googleAnalytics)} partytown={site.googleAnalytics.partytown}/>
     <slot />
     <style is:global>
       :root {
