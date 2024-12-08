@@ -76,7 +76,7 @@ import GoogleAnalytics from "../components/GoogleAnalytics.astro";
     </style>
   </head>
   <body class="bg-amber-100">
-    <GoogleAnalytics id={String(site.googleAnalytics)} partytown={site.googleAnalytics.partytown}/>
+    <GoogleAnalytics id={String(site.googleAnalytics.id)} partytown={site.googleAnalytics.partytown}/>
     <slot />
     <style is:global>
       :root {
