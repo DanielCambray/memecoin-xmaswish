@@ -1,8 +1,8 @@
 ---
 import { Picture } from 'astro:assets';
-import WISH_001 from '../assets/WISH_001.jpg'
-import WISH_002 from '../assets/WISH_002.jpg'
-import WISH_003 from '../assets/WISH_003.jpg'
+import WISH_002 from '../assets/WISH_002_raw.jpg'
+import WISH_004 from '../assets/WISH_004_raw.jpg'
+import WISH_005 from '../assets/WISH_005_raw.jpg'
 import  {URLs} from "../data/data.json"
 ---
 
@@ -17,30 +17,32 @@ import  {URLs} from "../data/data.json"
         <Picture
                 src={WISH_002} formats={['avif', 'webp']}
                 alt="A time travel machine to withdraw what I just said to my wife."
-                widths={[240, 540, 720, WISH_001.width]}
-                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_001.width}px`}
+                widths={[240, 540, 720, WISH_002.width]}
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_002.width}px`}
         />
         <div class="italic">A time travel machine to withdraw what I just said to my wife.</div>
     </div>
 
     <div>
         <Picture
-                src={WISH_003} formats={['avif', 'webp']}
-                alt="AA pet dragon that breathes fire on the guys that pissed me off."
-                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_001.width}px`}
+                src={WISH_005} formats={['avif', 'webp']}
+                alt="A dog picking up its own poop."
+                widths={[240, 540, 720, WISH_005.width]}
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_005.width}px`}
         />
-        <div class="italic">A pet dragon that breathes fire on the guys that pissed me off.</div>
+        <div class="italic">A dog picking up its own poop.</div>
     </div>
 
     <div>
         <Picture
-                src={WISH_001} formats={['avif', 'webp']}
-                alt="A unicorn to take me far away when I'm in troubles."
-                widths={[240, 540, 720, WISH_001.width]}
-                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_001.width}px`}
+                src={WISH_004} formats={['avif', 'webp']}
+                alt="A husband who does the dishes happily."
+                sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${WISH_004.width}px`}
         />
-        <div class="italic">A unicorn to take me far away when I'm in troubles.</div>
+        <div class="italic">A husband who does the dishes happily.</div>
     </div>
+
+
 </div>
 
 <h2
