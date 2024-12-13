@@ -2,7 +2,7 @@
 import TelegramIcon from "../icons/TelegramIcon.astro";
 import XIcon from "../icons/XIcon.astro";
 import DexScreenerIcon from "../icons/DexScreenerIcon.astro";
-import {coinName, contractAddress, poolAddress, URLs, isGraduated} from "../data/data.json"
+import {coinName, moonshotContractAddress, poolAddress, URLs, isGraduated} from "../data/data.json"
 ---
 
 <div class="social-links my-4">
@@ -26,7 +26,7 @@ import {coinName, contractAddress, poolAddress, URLs, isGraduated} from "../data
 
     { isGraduated && (
         <a
-            href=`${URLs.dexScreenerBaseURL}${contractAddress}`
+            href=`${URLs.dexScreenerBaseURL}${moonshotContractAddress}`
             class="el flex items-center justify-center h-12 w-12 bg-white rounded-full transition-transform duration-200 transform hover:scale-110"
         >
           <DexScreenerIcon/>
@@ -34,7 +34,7 @@ import {coinName, contractAddress, poolAddress, URLs, isGraduated} from "../data
     )}
 
     <a
-      href={isGraduated ? `${URLs.raydiumBaseURL}${poolAddress}`: `${URLs.pumpBaseURL}${contractAddress}`}
+      href={isGraduated ? `${URLs.raydiumBaseURL}${poolAddress}`: `${URLs.moonshotBaseURL}${moonshotContractAddress}`}
       target="_blank"
       class="flex items-center justify-center bg-tertiary rounded px-2 border-2 border-tertiary hover:border-black">
       Buy ${coinName}

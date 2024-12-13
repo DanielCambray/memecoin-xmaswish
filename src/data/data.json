@@ -17,9 +17,12 @@
     "raydiumBaseURL" : "https://raydium.io/swap/?inputMint=sol&outputMint=",
     "jupBaseURL": "https://jup.ag/swap/SOL-",
     "phantomURL": "https://phantom.app/",
-    "pumpBaseURL": "https://pump.fun/coin/"
+    "pumpBaseURL": "https://pump.fun/coin/",
+    "moonshotBaseURL": "https://dexscreener.com/solana/"
   },
   "contractAddress": "FLhXjLfxdzFsCkn4Ts7G7BUP1UVCwYRD7CHp2gVnpump",
+  "pumpContractAddress": "FLhXjLfxdzFsCkn4Ts7G7BUP1UVCwYRD7CHp2gVnpump",
+  "moonshotContractAddress": "hpqn1rw4uenpsnrddqpgcfeac74yvx7xzx6h5hl4moon",
   "poolAddress": "",
   "coinName": "XMASWISH",
   "tagLine": "Santa Claus Might Need an Upgrade!",

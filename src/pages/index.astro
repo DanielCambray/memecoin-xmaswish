@@ -6,8 +6,8 @@ import XMASWISH_IMAGE from '../assets/XMASWISH.jpg';
 import CoinDescription1 from "../components/CoinDescription1.astro";
 import ContractAddress from "../components/ContractAddress.astro";
 import HowToBuyRaydium from "../components/HowToBuyRaydium.astro";
-import HowToBuyPump from "../components/HowToBuyPump.astro"
 import {isGraduated} from '../data/data.json'
+import HowToBuyMoonshot from "../components/HowToBuyMoonshot.astro";
 ---
 
 <Layout>
@@ -42,7 +42,7 @@ import {isGraduated} from '../data/data.json'
       !isGraduated && (
           <div class="bg-tertiary pb-12">
             <div class="container">
-              <HowToBuyPump/>
+              <HowToBuyMoonshot/>
             </div>
           </div>
       )
